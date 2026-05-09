@@ -1,0 +1,2 @@
+Data source: 
+International Telecommunication Union (via World Bank) (2025) – with minor processing by Our World in Data. “Share of the population using the Internet – International Telecommunication Union” [dataset]. International Telecommunication Union (via World Bank), “World Development Indicators” [original data]. Retrieved May 8, 2025 from https://ourworldindata.org/grapher/share-of-individuals-using-the-internet
