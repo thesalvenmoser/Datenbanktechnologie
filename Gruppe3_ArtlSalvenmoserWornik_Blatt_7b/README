@@ -1,0 +1,11 @@
+``` bash
+docker compose up
+```
+
+``` bash
+psql -U postgres
+```
+
+``` psql
+postgres=# \i 'db_us_population.txt'
+```

@@ -1,0 +1,182 @@
+--
+-- PostgreSQL database dump
+--
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET transaction_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+DROP DATABASE population;
+--
+-- TOC entry 3618 (class 1262 OID 16418)
+-- Name: population; Type: DATABASE; Schema: -; Owner: -
+--
+
+CREATE DATABASE population WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'en_US.UTF-8';
+
+
+\connect population
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET transaction_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- TOC entry 216 (class 1259 OID 16430)
+-- Name: population_data_us; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.population_data_us (
+    record_id integer NOT NULL,
+    country_name text,
+    country_code character varying(10),
+    year integer,
+    population_value bigint
+);
+
+
+--
+-- TOC entry 215 (class 1259 OID 16429)
+-- Name: population_data_us_record_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.population_data_us_record_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- TOC entry 3619 (class 0 OID 0)
+-- Dependencies: 215
+-- Name: population_data_us_record_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.population_data_us_record_id_seq OWNED BY public.population_data_us.record_id;
+
+
+--
+-- TOC entry 3465 (class 2604 OID 16433)
+-- Name: population_data_us record_id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.population_data_us ALTER COLUMN record_id SET DEFAULT nextval('public.population_data_us_record_id_seq'::regclass);
+
+
+--
+-- TOC entry 3612 (class 0 OID 16430)
+-- Dependencies: 216
+-- Data for Name: population_data_us; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+INSERT INTO public.population_data_us VALUES (1, 'United States', 'USA', 1960, 180671000);
+INSERT INTO public.population_data_us VALUES (2, 'United States', 'USA', 1961, 183691000);
+INSERT INTO public.population_data_us VALUES (3, 'United States', 'USA', 1962, 186538000);
+INSERT INTO public.population_data_us VALUES (4, 'United States', 'USA', 1963, 189242000);
+INSERT INTO public.population_data_us VALUES (5, 'United States', 'USA', 1964, 191889000);
+INSERT INTO public.population_data_us VALUES (6, 'United States', 'USA', 1965, 194303000);
+INSERT INTO public.population_data_us VALUES (7, 'United States', 'USA', 1966, 196560000);
+INSERT INTO public.population_data_us VALUES (8, 'United States', 'USA', 1967, 198712000);
+INSERT INTO public.population_data_us VALUES (9, 'United States', 'USA', 1968, 200706000);
+INSERT INTO public.population_data_us VALUES (10, 'United States', 'USA', 1969, 202677000);
+INSERT INTO public.population_data_us VALUES (11, 'United States', 'USA', 1970, 205052000);
+INSERT INTO public.population_data_us VALUES (12, 'United States', 'USA', 1971, 207661000);
+INSERT INTO public.population_data_us VALUES (13, 'United States', 'USA', 1972, 209896000);
+INSERT INTO public.population_data_us VALUES (14, 'United States', 'USA', 1973, 211909000);
+INSERT INTO public.population_data_us VALUES (15, 'United States', 'USA', 1974, 213854000);
+INSERT INTO public.population_data_us VALUES (16, 'United States', 'USA', 1975, 215973000);
+INSERT INTO public.population_data_us VALUES (17, 'United States', 'USA', 1976, 218035000);
+INSERT INTO public.population_data_us VALUES (18, 'United States', 'USA', 1977, 220239000);
+INSERT INTO public.population_data_us VALUES (19, 'United States', 'USA', 1978, 222585000);
+INSERT INTO public.population_data_us VALUES (20, 'United States', 'USA', 1979, 225055000);
+INSERT INTO public.population_data_us VALUES (21, 'United States', 'USA', 1980, 227225000);
+INSERT INTO public.population_data_us VALUES (22, 'United States', 'USA', 1981, 229466000);
+INSERT INTO public.population_data_us VALUES (23, 'United States', 'USA', 1982, 231664000);
+INSERT INTO public.population_data_us VALUES (24, 'United States', 'USA', 1983, 233792000);
+INSERT INTO public.population_data_us VALUES (25, 'United States', 'USA', 1984, 235825000);
+INSERT INTO public.population_data_us VALUES (26, 'United States', 'USA', 1985, 237924000);
+INSERT INTO public.population_data_us VALUES (27, 'United States', 'USA', 1986, 240133000);
+INSERT INTO public.population_data_us VALUES (28, 'United States', 'USA', 1987, 242289000);
+INSERT INTO public.population_data_us VALUES (29, 'United States', 'USA', 1988, 244499000);
+INSERT INTO public.population_data_us VALUES (30, 'United States', 'USA', 1989, 246819000);
+INSERT INTO public.population_data_us VALUES (31, 'United States', 'USA', 1990, 249623000);
+INSERT INTO public.population_data_us VALUES (32, 'United States', 'USA', 1991, 252981000);
+INSERT INTO public.population_data_us VALUES (33, 'United States', 'USA', 1992, 256514000);
+INSERT INTO public.population_data_us VALUES (34, 'United States', 'USA', 1993, 259919000);
+INSERT INTO public.population_data_us VALUES (35, 'United States', 'USA', 1994, 263126000);
+INSERT INTO public.population_data_us VALUES (36, 'United States', 'USA', 1995, 266278000);
+INSERT INTO public.population_data_us VALUES (37, 'United States', 'USA', 1996, 269394000);
+INSERT INTO public.population_data_us VALUES (38, 'United States', 'USA', 1997, 272657000);
+INSERT INTO public.population_data_us VALUES (39, 'United States', 'USA', 1998, 275854000);
+INSERT INTO public.population_data_us VALUES (40, 'United States', 'USA', 1999, 279040000);
+INSERT INTO public.population_data_us VALUES (41, 'United States', 'USA', 2000, 282162411);
+INSERT INTO public.population_data_us VALUES (42, 'United States', 'USA', 2001, 284968955);
+INSERT INTO public.population_data_us VALUES (43, 'United States', 'USA', 2002, 287625193);
+INSERT INTO public.population_data_us VALUES (44, 'United States', 'USA', 2003, 290107933);
+INSERT INTO public.population_data_us VALUES (45, 'United States', 'USA', 2004, 292805298);
+INSERT INTO public.population_data_us VALUES (46, 'United States', 'USA', 2005, 295516599);
+INSERT INTO public.population_data_us VALUES (47, 'United States', 'USA', 2006, 298379912);
+INSERT INTO public.population_data_us VALUES (48, 'United States', 'USA', 2007, 301231207);
+INSERT INTO public.population_data_us VALUES (49, 'United States', 'USA', 2008, 304093966);
+INSERT INTO public.population_data_us VALUES (50, 'United States', 'USA', 2009, 306771529);
+INSERT INTO public.population_data_us VALUES (51, 'United States', 'USA', 2010, 309327143);
+INSERT INTO public.population_data_us VALUES (52, 'United States', 'USA', 2011, 311583481);
+INSERT INTO public.population_data_us VALUES (53, 'United States', 'USA', 2012, 313877662);
+INSERT INTO public.population_data_us VALUES (54, 'United States', 'USA', 2013, 316059947);
+INSERT INTO public.population_data_us VALUES (55, 'United States', 'USA', 2014, 318386329);
+INSERT INTO public.population_data_us VALUES (56, 'United States', 'USA', 2015, 320738994);
+INSERT INTO public.population_data_us VALUES (57, 'United States', 'USA', 2016, 323071755);
+INSERT INTO public.population_data_us VALUES (58, 'United States', 'USA', 2017, 325122128);
+INSERT INTO public.population_data_us VALUES (59, 'United States', 'USA', 2018, 326838199);
+INSERT INTO public.population_data_us VALUES (60, 'United States', 'USA', 2019, 328329953);
+INSERT INTO public.population_data_us VALUES (61, 'United States', 'USA', 2020, 331526933);
+INSERT INTO public.population_data_us VALUES (62, 'United States', 'USA', 2021, 332048977);
+INSERT INTO public.population_data_us VALUES (63, 'United States', 'USA', 2022, 333271411);
+INSERT INTO public.population_data_us VALUES (64, 'United States', 'USA', 2023, 334914895);
+
+
+--
+-- TOC entry 3620 (class 0 OID 0)
+-- Dependencies: 215
+-- Name: population_data_us_record_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.population_data_us_record_id_seq', 64, true);
+
+
+--
+-- TOC entry 3467 (class 2606 OID 16437)
+-- Name: population_data_us population_data_us_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.population_data_us
+    ADD CONSTRAINT population_data_us_pkey PRIMARY KEY (record_id);
+
+
+--
+-- PostgreSQL database dump complete
+--
+

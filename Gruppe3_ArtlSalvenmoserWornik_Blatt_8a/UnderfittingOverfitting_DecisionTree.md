@@ -1,5 +1,5 @@
 # Data Mining und Machine Learning
-Im Data Mining werden Datensätze zur Identifikation von Mustern für die weitere Verarbeitung klassifiziert. Diese Muster können einerseits für Vorhersagen verwendet werden. Dabei dienen die Muster, die durch Analyse von Testdaten erkannt wurden, als Funktion für weitere Datensätze. Andererseits kann dadurch auch der Einfluss bestimmter Eigenschaften der Daten auf andere bestimmt werden. Zur Klassifikation werden unterschiedliche Machine-Learning-Werkzeuge verwendet. Ziel dieser Verfahren ist die Bestimmung eines Modells, das jegliche Daten-Inputs spezifischen Daten-Outputs zuweist. Je nach Learning Algorithmus können unterschiedliche Arten von Modellen trainiert werden. Das Trainingsset ist eine bestimmte Menge an Daten, die anhand bestimmter Eigenschaften ihrer einzelnen Einträge analysiert wird. Die Einträge werden anhand ihrer Eigenschaften in unterschiedliche Klassen eingordnet. Dabei kann eine Vielzahl unterschiedlicher Modelle entstehen. Nicht jeder Entscheidungsbaum ist für die Klassifizierung verschiedener Datensätze geeignet. Um das am besten geeignete Modell zu bestimmen, werden die Modelle auf ein Test-Set angewendet, das Daten aus dem gleichen Datensatz enthält. Zumeist wird eine Aufteilung des Datensatzes in 75% Trainingsset und 25% Test-Set angestrebt.
+Im Data Mining werden Datensätze zur Identifikation von Mustern für die weitere Verarbeitung klassifiziert. Diese Muster können einerseits für Vorhersagen verwendet werden. Dabei dienen die Muster, die durch Analyse von Testdaten erkannt wurden, als Funktion für weitere Datensätze. Andererseits kann dadurch auch der Einfluss bestimmter Eigenschaften der Daten auf andere bestimmt werden. Zur Klassifikation werden unterschiedliche Machine-Learning-Werkzeuge verwendet. Ziel dieser Verfahren ist die Bestimmung eines Modells, das jegliche Daten-Inputs spezifischen Daten-Outputs zuweist. Je nach Learning Algorithmus können unterschiedliche Arten von Modellen trainiert werden. Das Trainingsset ist eine bestimmte Menge an Daten, die anhand bestimmter Eigenschaften ihrer einzelnen Einträge analysiert wird. Die Einträge werden anhand ihrer Eigenschaften in unterschiedliche Klassen eingordnet. Dabei kann eine Vielzahl unterschiedlicher Modelle entstehen. Nicht jeder Entscheidungsbaum ist für die Klassifizierung verschiedener Datensätze geeignet. Um das am besten geeignete Modell zu bestimmen, werden die Modelle auf ein Test-Set angewendet, das Daten aus dem gleichen Datensatz enthält. Zumeist wird eine Aufteilung des Datensatzes in 75% Trainingsset und 25% Test-Set angestrebt [1].
 
 ## Decision-Tree-Induction allgemein
 Die Induktion eines Entscheidungsbaums ist der erste Schritt im Prozess des Supervised (Machine) Learning. Es gibt exponentiell viele Möglichkeiten, wie dieser aussehen kann und den optimalen zu finden ist nicht lösbar. Durch die Aufspaltung der einzelnen Einträge nach unterschiedlichen Werden ihrer Attribute wird Schritt für Schritt ein Entscheidungsbaum gebaut.
@@ -30,8 +30,12 @@ Das C4.5 Verfahren zur Erstellung von Entscheidungsbäumen ist ein rekursiver Al
 
 - Alle Einträge eines Datensatzes gehören zu der gleichen Klasse.
 - Für die Aufspaltung des Datensatzes sind keine Attribute mehr übrig.
+
 1. Berechne Entropie des gesamten Datensatzes
 2. Für jedes Attribut: Berechne Informationsgewinn / Informationsgewinn-Verhältnis
 3. Wähle Attribut mit bestem Informationsgewinn-Verhältnis als Wurzel/Knoten
 4. Teile Datensatz anhand dieses Attributs
 5. Wiederhole rekursiv für Teilmengen
+
+## Quellen
+[1] P. Rodler: Supervised Learning. In: VI-Folien zu Introduction to Artificial Intelligence 2. WiSe2025. 2-17, 36-56.
