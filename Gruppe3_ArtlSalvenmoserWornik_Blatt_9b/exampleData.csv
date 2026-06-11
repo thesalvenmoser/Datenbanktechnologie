@@ -1,0 +1,21 @@
+ID,Age,Gender,ZipCode,Occupation,Income,Education,FavoriteColor,City,Street
+1,32,Male,1010,Software Engineer,65000,Bachelor's,Blue,Vienna,Schottenring
+2,28,Female,1020,Teacher,45000,Master's,Green,Vienna,Praterstraße
+3,45,Male,6020,Doctor,120000,Doctorate,Red,Innsbruck,Rathausgasse
+4,22,Female,8010,Student,0,High School,Yellow,Graz,Herrengasse
+5,61,Male,5020,Retired,50000,Bachelor's,Purple,Salzburg,Getreidegasse
+6,38,Female,6020,Nurse,55000,Associate's,Orange,Innsbruck,Maria-Theresien-Straße
+7,50,Male,1030,Lawyer,90000,Doctorate,Blue,Vienna,Landstraße
+8,25,Female,8010,Artist,35000,Bachelor's,Red,Graz,Sporgasse
+9,40,Male,1040,Accountant,70000,Master's,Green,Vienna,Wienzeile
+10,30,Female,5020,Designer,40000,Bachelor's,Yellow,Salzburg,Chiemgasse
+11,29,Male,1010,Developer,75000,Associate's,Purple,Vienna,Kärntner Straße
+12,48,Female,1020,Manager,80000,Bachelor's,Orange,Vienna,Würzburggasse
+13,35,Male,6020,Engineer,100000,Master's,Red,Innsbruck,Leopoldstraße
+14,23,Female,8010,Student,0,High School,Blue,Graz,Hauptplatz
+15,55,Male,5020,Professor,110000,Doctorate,Green,Salzburg,Linzergasse
+16,31,Female,1010,Analyst,60000,Bachelor's,Yellow,Vienna,Stephansplatz
+17,42,Male,1030,Consultant,130000,Master's,Purple,Vienna,Prinz Eugen-Straße
+18,24,Female,9020,Software Engineer,42000,Bachelor's,Red,Klagenfurt,Villacher Straße
+19,39,Male,1040,Architect,85000,Doctorate,Green,Vienna,Rennweg
+20,33,Female,9020,Writer,52000,Bachelor's,Yellow,Salzburg,Wolfsgasse
